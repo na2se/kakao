@@ -1,0 +1,96 @@
+/* a, span, em, input */
+
+@import "vars";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: top;
+  // 이미지공백없어짐
+}
+body {
+  font-family: "Lato", "Pretendard", sans-serif;
+  font-size: 16px;
+  color: #111;
+  background-color: #111;
+}
+li {
+  list-style: none;
+}
+
+header {
+  height: 60px;
+  background-color: #fff;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 18px;
+    font-weight: 300;
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+.list {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    img {
+      width: 80px;
+    }
+  }
+}
+
+.search-box {
+  width: 600px;
+  margin: 50px auto;
+  padding: 10px 30px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 100px;
+  .search-txt {
+    flex-grow: 1;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+  }
+  .btn-search {
+    background: none;
+    border: none;
+    outline: none;
+    .material-icons {
+      font-size: 36px;
+    }
+  }
+}
+#map {
+  width: 1400px;
+  aspect-ratio: 2/1;
+  background-color: #000;
+  margin: 100px auto;
+}
+
+.customoverlay {
+  background-color: rgb(60, 73, 187);
+  padding: 10px 15px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 70px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
